@@ -1,0 +1,16 @@
+<%- include("partials/header") %>
+
+<h1>Dog breed search</h1>
+<ul>
+    <% Object.entries(data["message"]).forEach(function([key, values]){ %>
+        <li>
+            <%= `${key}`%>
+        </li>
+    <% }); %>
+</ul>
+<form action="/results" method="get">
+    <input name="breed" type="text" />
+    <input type="submit" />
+</form>
+
+<%- include("partials/footer") %>

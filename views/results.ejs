@@ -1,0 +1,14 @@
+<%- include("partials/header") %>
+
+<h1>List of ten: </h1>
+<ul>
+    <% for(var i = 0; i < 10; i++){ %>
+        <li>
+            <img height="400" width="500" alt="dog-picture" src="<%= data["message"][i]; %>" />
+        </li>
+    <% } %>
+</ul>
+
+<a href="/">Search Again!</a>
+
+<%- include("partials/footer") %>
